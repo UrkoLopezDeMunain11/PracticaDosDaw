@@ -53,5 +53,4 @@ public class Main {
 public class A {
      System.out.println("Hola mundo");
 }
->>>>>>> 19ef95843e1e9f3f27ea6ad3436a60302db1db01
 }
