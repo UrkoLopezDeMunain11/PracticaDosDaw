@@ -26,4 +26,7 @@ public class Main {
     public static void f1(){
         System.out.println("Hola mundo");
     }
+    public static void f1(){
+        System.out.println("Hola mundo");
+    }
 }
