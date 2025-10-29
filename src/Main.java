@@ -45,4 +45,7 @@ public class Main {
 
         JOptionPane.showMessageDialog(null, factura.toString(), "Factura", JOptionPane.INFORMATION_MESSAGE);
 }
+public class A {
+     System.out.println("Hola mundo");
+}
 }
