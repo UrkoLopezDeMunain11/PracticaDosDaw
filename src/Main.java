@@ -29,7 +29,29 @@ public class Main {
     public static void f1(){
         System.out.println("Hola mundo");
     }
+<<<<<<< HEAD
     public static void f1(){
         System.out.println("Dime tu nombre");
     }
+=======
+    StringBuilder factura = new StringBuilder();
+        factura.append("Factura de ").append(nombreCliente).append("\n\n");
+        factura.append(String.format("%-15s %-10s %-10s %-10s %-10s\n", "Producto", "Cantidad", "Precio", "IVA", "Total"));
+
+    double totalFactura = 0;
+
+        for (Producto p : productos) {
+        factura.append(String.format("%-15s %-10d %-10.2f %-10.2f %-10.2f\n",
+                p.nombre, p.cantidad, p.precioUnitario, p.calcularIVA(), p.calcularTotal()));
+        totalFactura += p.calcularTotal();
+    }
+
+        factura.append("\nTotal a pagar: ").append(String.format("%.2f €", totalFactura));
+
+        JOptionPane.showMessageDialog(null, factura.toString(), "Factura", JOptionPane.INFORMATION_MESSAGE);
+}
+public class A {
+     System.out.println("Hola mundo");
+}
+>>>>>>> 19ef95843e1e9f3f27ea6ad3436a60302db1db01
 }
